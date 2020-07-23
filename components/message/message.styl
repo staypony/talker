@@ -1,0 +1,62 @@
+.message
+	position relative
+	display block
+	min-height 48px
+	margin-top 14px
+	padding-right 50px
+	padding-left 80px
+	line-height 22px
+	defaultTransition()
+
+	&:hover
+		background-color var(--secondary-background)
+
+	&__avatar
+		position absolute
+		top 4px
+		left 20px
+		width 40px
+		height 40px
+		user-select none
+		border-radius 50%
+		object-fit cover
+		object-position center center
+
+	&__author-name
+		display inline-block
+		vertical-align middle
+		overflow hidden
+		max-width 150px
+		font-size 14px
+		font-weight 600
+		white-space nowrap
+		text-overflow ellipsis
+		cursor pointer
+
+		&:hover
+			text-decoration underline
+
+	&__header
+		min-height 22px
+		font-size 0
+		white-space pre-line
+
+	&__timestamp
+		display none
+		vertical-align middle
+		margin-left 4px
+		color var(--gray_600)
+		font-size 12px
+		cursor default
+
+		+above(size-m)
+			display inline
+
+	&__text
+		color var(--gray_200)
+
+	&__emoji
+		vertical-align bottom
+		width 22px
+		height 22px
+		object-fit contain
