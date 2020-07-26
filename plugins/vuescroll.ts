@@ -5,6 +5,7 @@ Vue.use(vuescroll, {
   ops: {
     scrollPanel: {
       easing: 'easeInQuad',
+      scrollingX: false,
     },
     rail: {
       background: '#00000044',
