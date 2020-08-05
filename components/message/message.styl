@@ -1,6 +1,7 @@
 .message
 	position relative
 	display block
+	flex-shrink 0
 	min-height 48px
 	margin-top 14px
 	padding-right 50px
@@ -60,3 +61,11 @@
 		width 22px
 		height 22px
 		object-fit contain
+
+	&__body
+		flex-shrink 0
+
+	&__image
+		display inline-block
+		max-width 80%
+		object-fit cover

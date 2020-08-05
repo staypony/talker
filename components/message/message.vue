@@ -8,6 +8,7 @@
         <time class="message__timestamp">{{ timestamp }}</time>
       </div>
       <div class="message__body">
+        <img v-if="image" :src="image" alt="Image" class="message__image" />
         <span class="message__text">{{ message }}</span>
       </div>
     </div>
@@ -25,6 +26,7 @@ import { Component, Prop, Vue } from 'nuxt-property-decorator';
 })
 export default class Message extends Vue {
   @Prop({ type: String }) message!: string;
+  @Prop({ type: String }) image!: string;
   @Prop({ type: String }) username!: string;
   @Prop({ type: String }) timestamp!: string;
 }
