@@ -1,0 +1,1 @@
+{"version":3,"file":"lang-ru-RU.js","sources":["webpack:///./lang/ru-RU.js"],"sourcesContent":["export default {\n  welcome: 'Добро пожаловать',\n};\n"],"mappings":";;;;;;;AAAA;AAAA;AACA;AADA;;;;A","sourceRoot":""}
