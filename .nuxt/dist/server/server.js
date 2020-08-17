@@ -1695,7 +1695,7 @@ __webpack_require__.r(__webpack_exports__);
   });
   return {
     link: errorLink,
-    httpEndpoint: process.env.GRAPHQL || 'http://localhost:4000/graphql',
+    httpEndpoint: "https://api.talker.staypony.space/graphql" || false,
     httpLinkOptions: {
       fetch: (uri, options) => {
         // const lang: string = new Cookies().get('i18n_redirected');
@@ -1946,7 +1946,9 @@ async function setContext(app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {}
+      env: {
+        "GRAPHQL": "https://api.talker.staypony.space/graphql"
+      }
     }; // Only set once
 
     if ( true && context.req) {
@@ -2658,7 +2660,7 @@ var upload_file_component = normalizeComponent(
   false,
   injectStyles,
   null,
-  "31365f82"
+  "01e5eb41"
   
 )
 
@@ -2724,7 +2726,7 @@ var message_component = normalizeComponent(
   false,
   message_injectStyles,
   null,
-  "883a2c00"
+  "918f1382"
   
 )
 
@@ -2774,7 +2776,7 @@ var chat_component = normalizeComponent(
   false,
   chat_injectStyles,
   null,
-  "169f85aa"
+  "2fe97def"
   
 )
 
@@ -2819,7 +2821,7 @@ var main_component = normalizeComponent(
   false,
   main_injectStyles,
   null,
-  "4e4be500"
+  "4a17195b"
   
 )
 
@@ -3014,7 +3016,7 @@ var nuxt_error_component = normalizeComponent(
   false,
   nuxt_error_injectStyles,
   null,
-  "f4cbfb16"
+  "0bc7fee0"
   
 )
 
@@ -3318,7 +3320,7 @@ var nuxt_loading_component = normalizeComponent(
   false,
   nuxt_loading_injectStyles,
   null,
-  "050b932e"
+  "597519c4"
   
 )
 
@@ -3404,7 +3406,7 @@ var emoji_panel_component = normalizeComponent(
   false,
   emoji_panel_injectStyles,
   null,
-  "dd3d9a28"
+  "6210beab"
   
 )
 
@@ -3465,7 +3467,7 @@ var attach_panel_component = normalizeComponent(
   false,
   attach_panel_injectStyles,
   null,
-  "8d9c5fac"
+  "7bf6216f"
   
 )
 
@@ -3556,7 +3558,7 @@ var footer_component = normalizeComponent(
   false,
   footer_injectStyles,
   null,
-  "ae200f6c"
+  "611efecf"
   
 )
 
@@ -3625,7 +3627,7 @@ var users_list_component = normalizeComponent(
   false,
   users_list_injectStyles,
   null,
-  "2db8b0ca"
+  "4470e3cf"
   
 )
 
@@ -3679,7 +3681,7 @@ var aside_panel_component = normalizeComponent(
   false,
   aside_panel_injectStyles,
   null,
-  "583994d0"
+  "28e9208f"
   
 )
 
@@ -3725,7 +3727,7 @@ var default_component = normalizeComponent(
   false,
   null,
   null,
-  "78e3c80a"
+  "430e425c"
   
 )
 
@@ -5248,19 +5250,19 @@ external_vue_default.a.use(external_vuescroll_default.a, {
 
 /* Plugins */
 
- // Source: .\\nuxt-i18n\\plugin.routing.js (mode: 'all')
+ // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
 
- // Source: .\\nuxt-i18n\\plugin.main.js (mode: 'all')
+ // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
 
- // Source: .\\apollo-module.js (mode: 'all')
+ // Source: ./apollo-module.js (mode: 'all')
 
- // Source: .\\nuxt-svg-sprite.js (mode: 'all')
+ // Source: ./nuxt-svg-sprite.js (mode: 'all')
 
- // Source: .\\router.js (mode: 'all')
+ // Source: ./router.js (mode: 'all')
 
- // Source: ..\\plugins\\nuxt-client-init.client.ts (mode: 'client')
+ // Source: ../plugins/nuxt-client-init.client.ts (mode: 'client')
 
- // Source: ..\\plugins\\vuescroll.ts (mode: 'all')
+ // Source: ../plugins/vuescroll.ts (mode: 'all')
 // Component: <ClientOnly>
 
 external_vue_default.a.component(external_vue_client_only_default.a.name, external_vue_client_only_default.a); // TODO: Remove in Nuxt 3: <NoSsr>

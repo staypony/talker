@@ -12,13 +12,13 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_pluginrouting_0f43a316 from 'nuxt_plugin_pluginrouting_0f43a316' // Source: .\\nuxt-i18n\\plugin.routing.js (mode: 'all')
-import nuxt_plugin_pluginmain_4ff54dcc from 'nuxt_plugin_pluginmain_4ff54dcc' // Source: .\\nuxt-i18n\\plugin.main.js (mode: 'all')
-import nuxt_plugin_apollomodule_7b8579e0 from 'nuxt_plugin_apollomodule_7b8579e0' // Source: .\\apollo-module.js (mode: 'all')
-import nuxt_plugin_nuxtsvgsprite_422f9162 from 'nuxt_plugin_nuxtsvgsprite_422f9162' // Source: .\\nuxt-svg-sprite.js (mode: 'all')
-import nuxt_plugin_router_3d580e2a from 'nuxt_plugin_router_3d580e2a' // Source: .\\router.js (mode: 'all')
-import nuxt_plugin_nuxtclientinitclient_a74159dc from 'nuxt_plugin_nuxtclientinitclient_a74159dc' // Source: ..\\plugins\\nuxt-client-init.client.ts (mode: 'client')
-import nuxt_plugin_vuescroll_74b36cf0 from 'nuxt_plugin_vuescroll_74b36cf0' // Source: ..\\plugins\\vuescroll.ts (mode: 'all')
+import nuxt_plugin_pluginrouting_36030d8b from 'nuxt_plugin_pluginrouting_36030d8b' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
+import nuxt_plugin_pluginmain_28d67c78 from 'nuxt_plugin_pluginmain_28d67c78' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
+import nuxt_plugin_apollomodule_76a56027 from 'nuxt_plugin_apollomodule_76a56027' // Source: ./apollo-module.js (mode: 'all')
+import nuxt_plugin_nuxtsvgsprite_7d04c4b9 from 'nuxt_plugin_nuxtsvgsprite_7d04c4b9' // Source: ./nuxt-svg-sprite.js (mode: 'all')
+import nuxt_plugin_router_2d7257b4 from 'nuxt_plugin_router_2d7257b4' // Source: ./router.js (mode: 'all')
+import nuxt_plugin_nuxtclientinitclient_a74159dc from 'nuxt_plugin_nuxtclientinitclient_a74159dc' // Source: ../plugins/nuxt-client-init.client.ts (mode: 'client')
+import nuxt_plugin_vuescroll_74b36cf0 from 'nuxt_plugin_vuescroll_74b36cf0' // Source: ../plugins/vuescroll.ts (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -194,24 +194,24 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_pluginrouting_0f43a316 === 'function') {
-    await nuxt_plugin_pluginrouting_0f43a316(app.context, inject)
+  if (typeof nuxt_plugin_pluginrouting_36030d8b === 'function') {
+    await nuxt_plugin_pluginrouting_36030d8b(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginmain_4ff54dcc === 'function') {
-    await nuxt_plugin_pluginmain_4ff54dcc(app.context, inject)
+  if (typeof nuxt_plugin_pluginmain_28d67c78 === 'function') {
+    await nuxt_plugin_pluginmain_28d67c78(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_apollomodule_7b8579e0 === 'function') {
-    await nuxt_plugin_apollomodule_7b8579e0(app.context, inject)
+  if (typeof nuxt_plugin_apollomodule_76a56027 === 'function') {
+    await nuxt_plugin_apollomodule_76a56027(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_nuxtsvgsprite_422f9162 === 'function') {
-    await nuxt_plugin_nuxtsvgsprite_422f9162(app.context, inject)
+  if (typeof nuxt_plugin_nuxtsvgsprite_7d04c4b9 === 'function') {
+    await nuxt_plugin_nuxtsvgsprite_7d04c4b9(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_router_3d580e2a === 'function') {
-    await nuxt_plugin_router_3d580e2a(app.context, inject)
+  if (typeof nuxt_plugin_router_2d7257b4 === 'function') {
+    await nuxt_plugin_router_2d7257b4(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_nuxtclientinitclient_a74159dc === 'function') {
